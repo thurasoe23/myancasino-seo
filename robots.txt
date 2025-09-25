@@ -27,5 +27,5 @@ Disallow:
 User-agent: MSNBot
 Disallow: 
 User-agent: *
-Disallow:
+Disallow: /cdn-cgi/
 Sitemap: https://myancasino.com/sitemap.xml
