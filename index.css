@@ -72,10 +72,8 @@
     text-decoration: underline dotted;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-size: 1em; /* Set an explicit base font size */
-    font-weight: 700; /* Set an explicit base font weight */
-    /* font-size: inherit; */
-    /* font-weight: inherit; */
+    font-size: inherit;
+    font-weight: inherit;
   }
   a {
     color: inherit;

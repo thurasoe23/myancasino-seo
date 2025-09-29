@@ -168,32 +168,32 @@
     <div class="flex w-full flex-col items-center gap-8 max-w-7xl px-4 md:flex-row md:justify-between md:gap-0 md:px-0 text-white">
       <div class="text-white text-center">
         <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer">
-          <img src="./assets/logo/MYAN99.webp" alt="Myan99 Logo" class="mx-auto animate-heartbeat" fetchpriority="high" />
+          <img src="./assets/logo/MYAN99.webp" alt="Myan99 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
         </a>
       </div>
       <div class="text-white text-center">
         <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer">
-          <img src="./assets/logo/MYAN88.webp" alt="Myan88 Logo" class="mx-auto animate-heartbeat" fetchpriority="high" />
+          <img src="./assets/logo/MYAN88.webp" alt="Myan88 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
         </a>
       </div>
       <div class="text-white text-center">
         <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer">
-          <img src="./assets/logo/B8MY.webp" alt="B8MY Logo" class="mx-auto animate-heartbeat" fetchpriority="high" />
+          <img src="./assets/logo/B8MY.webp" alt="B8MY Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
         </a>
       </div>
       <div class="text-white text-center">
         <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer">
-          <img src="./assets/logo/YOMA77.webp" alt="Yoma77 Logo" class="mx-auto animate-heartbeat" fetchpriority="high"/>
+          <img src="./assets/logo/YOMA77.webp" alt="Yoma77 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high"/>
         </a>
       </div>
       <div class="text-white text-center">
         <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer">
-          <img src="./assets/logo/MYAN98.webp" alt="Myan98 Logo" class="mx-auto animate-heartbeat" fetchpriority="high" />
+          <img src="./assets/logo/MYAN98.webp" alt="Myan98 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
         </a>
       </div>
       <div class="text-white text-center">
         <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" fetchpriority="high">
-          <img src="./assets/logo/BAGO888.webp" alt="Bago888 Logo" class="mx-auto animate-heartbeat" fetchpriority="high" />
+          <img src="./assets/logo/BAGO888.webp" alt="Bago888 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
         </a>
       </div>
     </div>
@@ -201,7 +201,7 @@
 
   <!-- Bonus Section -->
   <section id="bonus" class="relative py-20 text-white fade-in-section">
-    <img src="./assets/image/BG2.webp" alt="Myan Casino Bonus" class="absolute inset-0 w-full h-full object-cover -z-10" loading="lazy" />
+    <img src="./assets/image/BG2.avif" alt="Myan Casino Bonus" class="absolute inset-0 w-full h-full object-cover -z-10" loading="lazy" />
     <div class="absolute inset-0 bg-black/70 -z-10"></div>
     <div class="relative max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-start">
       <div class="flex flex-col gap-y-10">
@@ -485,10 +485,11 @@
 
   // Game card overlay for mobile
   const gameCards = document.querySelectorAll('.game-card');
+  const isMobile = window.innerWidth < 768;
   gameCards.forEach(card => {
     card.addEventListener('click', (e) => {
       // Only run this logic on mobile screen sizes
-      if (window.innerWidth < 768) {
+      if (isMobile) {
         const overlay = card.querySelector('.button-overlay');
 
         // If a link inside the overlay is clicked, do nothing and let the browser navigate.
