@@ -2,7 +2,7 @@
 <html lang="my">
 <head>
 
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WVR5SZ2GC"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js/id=G-2WVR5SZ2GC"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -15,7 +15,10 @@
     <title>MyanCasino 🎰 မြန်မာနိုင်ငံတွင် အကောင်းဆုံး အွန်လိုင်းကာစီနို ဘောနပ်စ်များနှင့် အခမဲ့ဂိမ်းများ</title>
     <meta name="description" content="မြန်မာကစားသူများအတွက် အကောင်းဆုံး အွန်လိုင်းကာစီနိုဘောနပ်စ်များ၊ အခမဲ့ဖရီးစပင်များနှင့် စိတ်လှုပ်ရှားဖွယ်ဂိမ်းများကို MyanCasino တွင် ရယူပါ။ တာဝန်ယူစွာကစားပြီး ပျော်ပါ။">
     <link rel="canonical" href="https://myancasino.com/">    
-    <link rel="stylesheet" href="index.css">
+    
+    <link rel="preload" href="index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="index.css"></noscript>
+    
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
 
@@ -64,7 +67,7 @@
   </script>
 
   <style>
-    /* Critical CSS to prevent layout shifts */
+    /* Critical CSS to prevent layout shifts and FOUC */
     body {
       font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
       color: oklch(21% 0.034 264.665); /* gray-900 */
@@ -147,238 +150,240 @@
     </div>
   </header>
 
-  <div id="home" class="relative min-h-screen pt-24 flex flex-col items-center justify-center gap-y-12 md:gap-y-20 text-center">
-    <img src="./assets/image/myanmar-casino.webp" alt="Vibrant Myan Casino game background" class="absolute inset-0 w-full h-full object-cover -z-10" fetchpriority="high" width="1920" height="1080" />
-    <div class="absolute inset-0 bg-black/60 -z-10"></div>
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white">မြန်မာ အွန်လိုင်း ကာစီနို</h1>
-    <a href="#bonus" class="bg-[#e76e01] text-black px-6 py-3 rounded-full flex items-center space-x-2 transition-transform duration-300 hover:scale-110">
-      <span>ဖရီးဘောနက်စ် ရယူပါ</span>
-      <span class="inline-block animate-gift-pulse">🎁</span>
-    </a>
-    <div class="flex w-full flex-col items-center gap-8 max-w-7xl px-4 md:flex-row md:justify-between md:gap-0 md:px-0 text-white">
-      <div class="text-white text-center">
-        <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer">
-          <img src="./assets/logo/MYAN99.webp" alt="Myan99 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
-        </a>
-      </div>
-      <div class="text-white text-center">
-        <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer">
-          <img src="./assets/logo/MYAN88.webp" alt="Myan88 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
-        </a>
-      </div>
-      <div class="text-white text-center">
-        <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer">
-          <img src="./assets/logo/B8MY.webp" alt="B8MY Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
-        </a>
-      </div>
-      <div class="text-white text-center">
-        <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer">
-          <img src="./assets/logo/YOMA77.webp" alt="Yoma77 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high"/>
-        </a>
-      </div>
-      <div class="text-white text-center">
-        <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer">
-          <img src="./assets/logo/MYAN98.webp" alt="Myan98 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
-        </a>
-      </div>
-      <div class="text-white text-center">
-        <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" fetchpriority="high">
-          <img src="./assets/logo/BAGO888.webp" alt="Bago888 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <section id="bonus" class="relative py-20 text-white fade-in-section">
-    <img src="./assets/image/BG2.avif" alt="Myan Casino Bonus" class="absolute inset-0 w-full h-full object-cover -z-10" loading="lazy" />
-    <div class="absolute inset-0 bg-black/70 -z-10"></div>
-    <div class="relative max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-start">
-      <div class="flex flex-col gap-y-10">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">ဂိမ်းဘောနပ်စ်များ ရယူပါ!</h2>
-        <ul class="space-y-6">
-          <li class="flex items-start gap-x-3">
-            <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
-            <div>
-              <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">Myan99 - စလော့ဂိမ်းချစ်သူများအတွက် သီးသန့်ဘောနပ်စ်လေးတွေလာပါပြီရှင့်!</a><span class="block mt-2">တစ်နေ့တာလောင်းကြေး 1,000,000 ပြည့်တာနဲ့ Coupon Code လေးရိုက်ထည့်ရုံဖြင့် 10,000 ကျပ်ရရှိမဲ့ Code လေးလာပါပြီ။</span>
-            </div>
-          </li>
-          <li class="flex items-start gap-x-3">
-            <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
-            <div>
-              <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">Myan88 - ၂၀၀၀ ကျပ်ရှိရုံနဲ့ Myan88 မှာရှယ်ပွါးလိုရနေပြီနော်!</a><span class="block mt-2">မြန်မာနိုင်ငံရဲ့ အကောင်းဆုံး အလျော်အစားအမှန်ကန်ဆုံး အေးဂျင့်ကြီးဖြစ်တဲ့ Myan88 ဂိမ်းဆိုဒ်မှာဆိုရင် ရှမ်းကိုးမီး အသေးစားဂိမ်းနှင့် ငါးဂိမ်းများ, Slot မျိုးစုံနှင့် ကစားလိုရပါတယ်နော်။</span>
-            </div>
-          </li>
-          <li class="flex items-start gap-x-3">
-            <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
-            <div>
-              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">B8MY - အခန်းတိုင်းလိုလို JACKPOT ပေးနေတာ ဘယ်ဂိမ်းလဲလိုမမေးနဲ့!</a><span class="block mt-2">သေချာတာကတော့ B8MY ပဲလေနော် JACKPOTပေါက်ဖူးချင်တယ်ဆိုရင်တော့ B8MY ကိုသာရွေးချယ်လိုက်ပါ</span>
-            </div>
-          </li>
-          <li class="flex items-start gap-x-3">
-            <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
-            <div>
-              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">Yoma77 ဂိမ်းလေးမှာ Telegram လေးရှိရုံဖြင့် စိတ်ကြိုက်ဆော့ကစားလိုရနေပါပြီနော်!</a><span class="block mt-2">Download ဆွဲစရဦမလို Website မလိုတဲ့အတွက် အခြားသူသိမှာဆိုးပြီး APP တွေဖျက်ရတဲ့အလုပ် သက်သာသွားလို အချိန်ကုန်လည်းသက်သာသွားမှာပါနော်</span>
-            </div>
-          </li>
-          <li class="flex items-start gap-x-3">
-            <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
-            <div>
-              <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">Myan98 - လူတိုင်းလူတိုင်းက အပြောင်းအလဲလေးရှိမှကြိုက်ကြတယ်မိုလား</a><span class="block mt-2">အခုလည်း စလော့ဂိမ်းကိုမှ ဂိမ်းဆိုဒ်လေးပြောင်းလဲဆော့နိုင်ဖိုအတွက် အခြားဂိမ်းဆိုဒ်လေးတွေနဲ့မိတ်ဆက်ပေးပါမယ်ရှင့်</span>
-            </div>
-          </li>
-          <li class="flex items-start gap-x-3">
-            <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
-            <div>
-              <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">Bago888 - ချစ်ကာကာတို ကိုယ်တိုင် အနည်းဆုံး သွင်းငွေ ၂၀၀၀ ကနေစပြီးကိုယ်တိုင်ငွေသွင်း ပြီး စိတ်ချယုံကြည်စွာ ဆော့ကစားလိုရပါပြီနော်</a><span class="block mt-2">Bago888 နဲ့လက်တွဲဖို ဖိတ်ခေါ်ပါတယ် အလိမ်အညာနာမည်ပျက်လုံးဝမရှိတာမို စိတ်ချလက်ချနဲ့ လာကစားဖိုဖိတ်ခေါ်ပါတယ်နော်!</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="flex flex-col gap-6">
-        <div class="overflow-hidden rounded-lg shadow-lg">
+  <main>
+    <div id="home" class="relative min-h-screen pt-24 flex flex-col items-center justify-center gap-y-12 md:gap-y-20 text-center">
+      <img src="./assets/image/myanmar-casino.webp" alt="Vibrant Myan Casino game background" class="absolute inset-0 w-full h-full object-cover -z-10" fetchpriority="high" width="1920" height="1080" />
+      <div class="absolute inset-0 bg-black/60 -z-10"></div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white">မြန်မာ အွန်လိုင်း ကာစီနို</h1>
+      <a href="#bonus" class="bg-[#e76e01] text-black px-6 py-3 rounded-full flex items-center space-x-2 transition-transform duration-300 hover:scale-110">
+        <span>ဖရီးဘောနက်စ် ရယူပါ</span>
+        <span class="inline-block animate-gift-pulse">🎁</span>
+      </a>
+      <div class="flex w-full flex-col items-center gap-8 max-w-7xl px-4 md:flex-row md:justify-between md:gap-0 md:px-0 text-white">
+        <div class="text-white text-center">
           <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer">
-            <img src="./assets/image/FREE SPIN MYAN 99.webp" alt="Online casino game promotion" class="w-full aspect-[30/10] object-cover transition-transform duration-300 hover:scale-110" fetchpriority="high" width="600" height="200" />
+            <img src="./assets/logo/MYAN99.webp" alt="Myan99 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
           </a>
         </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
+        <div class="text-white text-center">
           <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer">
-            <img src="./assets/image/WEEKLY BONUS MYAN88.webp" alt="Slot game jackpot bonus" class="w-full aspect-[30/10] object-cover transition-transform duration-300 hover:scale-110" width="600" height="200" fetchpriority="high" />
+            <img src="./assets/logo/MYAN88.webp" alt="Myan88 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
           </a>
         </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
+        <div class="text-white text-center">
           <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer">
-            <img src="./assets/image/GAME BONUS BAGO888.webp" alt="Online casino game promotion" class="w-full aspect-[30/10] object-cover transition-transform duration-300 hover:scale-110" fetchpriority="high" width="600" height="200" />
+            <img src="./assets/logo/B8MY.webp" alt="B8MY Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
           </a>
         </div>
-        <div class="overflow-hidden rounded-lg shadow-lg">
+        <div class="text-white text-center">
           <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer">
-            <img src="./assets/image/YOMA77 GOLDEN EGG.webp" alt="Slot game jackpot bonus" class="w-full aspect-[30/10] object-cover transition-transform duration-300 hover:scale-110" fetchpriority="high" width="600" height="200" />
+            <img src="./assets/logo/YOMA77.webp" alt="Yoma77 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high"/>
+          </a>
+        </div>
+        <div class="text-white text-center">
+          <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer">
+            <img src="./assets/logo/MYAN98.webp" alt="Myan98 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
+          </a>
+        </div>
+        <div class="text-white text-center">
+          <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" fetchpriority="high">
+            <img src="./assets/logo/BAGO888.webp" alt="Bago888 Logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
           </a>
         </div>
       </div>
     </div>
-  </section>
 
-  <section id="games" class="py-20 fade-in-section">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12">ရေပန်းအစားဆုံး ကာစီနိုနှင့် စလော့ဂိမ်းများ</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/super ace.webp" alt="Super Ace popular Myanmar Casino game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan99</a>
-            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
-            <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Bago888</a>
-          </div>
+    <section id="bonus" class="relative py-20 text-white fade-in-section">
+      <img src="./assets/image/BG2.avif" alt="Myan Casino Bonus" class="absolute inset-0 w-full h-full object-cover -z-10" loading="lazy" />
+      <div class="absolute inset-0 bg-black/70 -z-10"></div>
+      <div class="relative max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-start">
+        <div class="flex flex-col gap-y-10">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">ဂိမ်းဘောနပ်စ်များ ရယူပါ!</h2>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-x-3">
+              <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
+              <div>
+                <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">Myan99 - စလော့ဂိမ်းချစ်သူများအတွက် သီးသန့်ဘောနပ်စ်လေးတွေလာပါပြီရှင့်!</a><span class="block mt-2">တစ်နေ့တာလောင်းကြေး 1,000,000 ပြည့်တာနဲ့ Coupon Code လေးရိုက်ထည့်ရုံဖြင့် 10,000 ကျပ်ရရှိမဲ့ Code လေးလာပါပြီ။</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-x-3">
+              <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
+              <div>
+                <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">Myan88 - ၂၀၀၀ ကျပ်ရှိရုံနဲ့ Myan88 မှာရှယ်ပွါးလိုရနေပြီနော်!</a><span class="block mt-2">မြန်မာနိုင်ငံရဲ့ အကောင်းဆုံး အလျော်အစားအမှန်ကန်ဆုံး အေးဂျင့်ကြီးဖြစ်တဲ့ Myan88 ဂိမ်းဆိုဒ်မှာဆိုရင် ရှမ်းကိုးမီး အသေးစားဂိမ်းနှင့် ငါးဂိမ်းများ, Slot မျိုးစုံနှင့် ကစားလိုရပါတယ်နော်။</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-x-3">
+              <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
+              <div>
+                <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">B8MY - အခန်းတိုင်းလိုလို JACKPOT ပေးနေတာ ဘယ်ဂိမ်းလဲလိုမမေးနဲ့!</a><span class="block mt-2">သေချာတာကတော့ B8MY ပဲလေနော် JACKPOTပေါက်ဖူးချင်တယ်ဆိုရင်တော့ B8MY ကိုသာရွေးချယ်လိုက်ပါ</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-x-3">
+              <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
+              <div>
+                <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">Yoma77 ဂိမ်းလေးမှာ Telegram လေးရှိရုံဖြင့် စိတ်ကြိုက်ဆော့ကစားလိုရနေပါပြီနော်!</a><span class="block mt-2">Download ဆွဲစရဦမလို Website မလိုတဲ့အတွက် အခြားသူသိမှာဆိုးပြီး APP တွေဖျက်ရတဲ့အလုပ် သက်သာသွားလို အချိန်ကုန်လည်းသက်သာသွားမှာပါနော်</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-x-3">
+              <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
+              <div>
+                <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">Myan98 - လူတိုင်းလူတိုင်းက အပြောင်းအလဲလေးရှိမှကြိုက်ကြတယ်မိုလား</a><span class="block mt-2">အခုလည်း စလော့ဂိမ်းကိုမှ ဂိမ်းဆိုဒ်လေးပြောင်းလဲဆော့နိုင်ဖိုအတွက် အခြားဂိမ်းဆိုဒ်လေးတွေနဲ့မိတ်ဆက်ပေးပါမယ်ရှင့်</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-x-3">
+              <span class="inline-block animate-gift-pulse text-xl pt-1">🎁</span>
+              <div>
+                <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="font-bold text-[#fffd6c] hover:text-[#e76e01] hover:underline text-lg md:text-xl">Bago888 - ချစ်ကာကာတို ကိုယ်တိုင် အနည်းဆုံး သွင်းငွေ ၂၀၀၀ ကနေစပြီးကိုယ်တိုင်ငွေသွင်း ပြီး စိတ်ချယုံကြည်စွာ ဆော့ကစားလိုရပါပြီနော်</a><span class="block mt-2">Bago888 နဲ့လက်တွဲဖို ဖိတ်ခေါ်ပါတယ် အလိမ်အညာနာမည်ပျက်လုံးဝမရှိတာမို စိတ်ချလက်ချနဲ့ လာကစားဖိုဖိတ်ခေါ်ပါတယ်နော်!</span>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/aztec bank.webp" alt="Aztec Bank Myanmar Casino" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan98</a>
-            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
-            <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Bago888</a>
+        <div class="flex flex-col gap-6">
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer">
+              <img src="./assets/image/FREE SPIN MYAN 99.webp" alt="Myan99 Free Spin promotion banner" class="w-full aspect-[30/10] object-cover transition-transform duration-300 hover:scale-110" fetchpriority="high" width="600" height="200" />
+            </a>
           </div>
-        </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/golden empire.webp" alt="Golden Empire fish shooting Myanmar Casino arcade game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
-            <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan99</a>
-            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer">
+              <img src="./assets/image/WEEKLY BONUS MYAN88.webp" alt="Myan88 Weekly Bonus promotion banner" class="w-full aspect-[30/10] object-cover transition-transform duration-300 hover:scale-110" width="600" height="200" fetchpriority="high" />
+            </a>
           </div>
-        </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/olympus gate.png" alt="Olympus Gate Myanmar Casino game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Bago888</a>
-            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
-            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer">
+              <img src="./assets/image/GAME BONUS BAGO888.webp" alt="Bago888 Game Bonus promotion banner" class="w-full aspect-[30/10] object-cover transition-transform duration-300 hover:scale-110" fetchpriority="high" width="600" height="200" />
+            </a>
           </div>
-        </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/777.webp" alt="777 classic slot game in Myanmar Casino" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan99</a>
-            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
-            <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Bago888</a>
-          </div>
-        </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/charge buffalo.webp" alt="Charge Buffalo online Myanmar Casino" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan88</a>
-            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
-            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
-          </div>
-        </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/boxing king.webp" alt="Boxing King online Myanmar Casino" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan88</a>
-            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
-            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
-          </div>
-        </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/money coming.webp" alt="Money Coming online Myanmar Casino slot game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan88</a>
-            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
-            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
-          </div>
-        </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/treasure.webp" alt="Crazy Treasure online Myanmar Casino slot game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan88</a>
-            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
-            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
-          </div>
-        </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/golden temple.webp" alt="Golden Temple online Myanmar Casino slot game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan98</a>
-            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
-            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
-          </div>
-        </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/jackpot joker.webp" alt="Jackpot Joker Myanmar Casino online slot game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan98</a>
-            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
-            <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
-          </div>
-        </div>
-        <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
-          <img src="./assets/image/chin shi huang.webp" alt="Chin Shi Huang online Myanmar Casino slot game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
-          <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
-            <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan99</a>
-            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
-            <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Bago888</a>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer">
+              <img src="./assets/image/YOMA77 GOLDEN EGG.webp" alt="Yoma77 Golden Egg promotion banner" class="w-full aspect-[30/10] object-cover transition-transform duration-300 hover:scale-110" fetchpriority="high" width="600" height="200" />
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="py-20 bg-gray-100 fade-in-section">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">About our Myanmar Casino & Game Group</h2>
-      <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold text-[#FB2056] mb-8">Myanmar Casino</h3>
-      <p class="text-gray-700 leading-relaxed">
-        မြန်မာ အွန်လိုင်းကာစီနို သည် မြန်မာနိုင်ငံ၏ အကြီးဆုံးနှင့် ယုံကြည်စိတ်ချရဆုံး အွန်လိုင်း ကာစီနို (Casino) နှင့် စလော့ဂိမ်း (Slot Game) အဖွဲအစည်းအဖြစ် ဦးဆောင်နေပါသည်။ နိုင်ငံတဝှမ်းရှိ အွန်လိုင်းဂိမ်းကစားသူ မီလီယံချီတို၏ ပထမဆုံးရွေးချယ်မှုဖြစ်လာခဲ့ပါသည်။ ကျွန်ုပ်တိုသည် ယုံကြည်စိတ်ချရမှု၊ တိကျမှန်ကန်သော သတင်းအချက်အလက်နှင့် ဘေးကင်းလုံခြုံသော ဂိမ်းကစားခြင်းအတွေ့အကြုံကို ပေးအပ်ရန် ကတိပြုပါသည်။
+    <section id="games" class="py-20 fade-in-section">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12">ရေပန်းအစားဆုံး ကာစီနိုနှင့် စလော့ဂိမ်းများ</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/super ace.webp" alt="Super Ace popular Myanmar Casino game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan99</a>
+              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
+              <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Bago888</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/aztec bank.webp" alt="Aztec Bank Myanmar Casino" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan98</a>
+              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+              <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Bago888</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/golden empire.webp" alt="Golden Empire fish shooting Myanmar Casino arcade game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
+              <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan99</a>
+              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/olympus gate.png" alt="Olympus Gate Myanmar Casino game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Bago888</a>
+              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
+              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/777.webp" alt="777 classic slot game in Myanmar Casino" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan99</a>
+              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+              <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Bago888</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/charge buffalo.webp" alt="Charge Buffalo online Myanmar Casino" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan88</a>
+              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
+              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/boxing king.webp" alt="Boxing King online Myanmar Casino" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan88</a>
+              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
+              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/money coming.webp" alt="Money Coming online Myanmar Casino slot game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan88</a>
+              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
+              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/treasure.webp" alt="Crazy Treasure online Myanmar Casino slot game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan88</a>
+              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma7t7</a>
+              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/golden temple.webp" alt="Golden Temple online Myanmar Casino slot game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan98</a>
+              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
+              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/jackpot joker.webp" alt="Jackpot Joker Myanmar Casino online slot game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan98</a>
+              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
+              <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - B8MY</a>
+            </div>
+          </div>
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden game-card">
+            <img src="./assets/image/chin shi huang.webp" alt="Chin Shi Huang online Myanmar Casino slot game" class="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" width="170" height="170" />
+            <div class="button-overlay absolute inset-0 flex flex-col items-center justify-center space-y-2 bg-black/60 opacity-0 pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition-opacity duration-300">
+              <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Myan99</a>
+              <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Yoma77</a>
+              <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="bg-[#FB2056] hover:bg-[#CA0536] text-white text-sm px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105">Play in - Bago888</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-ဂိမ်းသတင်းများသာမက Myan99၊ Yoma77 နှင့် Bago888 ကဲ့သို နိုင်ငံတကာအဆင့်မီ ဂိမ်းပလက်ဖောင်းများနှင့် ပူးပေါင်း၍ အကောင်းဆုံး အွန်လိုင်းဂိမ်းအတွေ့အကြုံကို ပေးစွမ်းပါသည်။ စိတ်လှုပ်ရှားဖွယ်ရာ အင်္ဂါရပ်များ၊ အသုံးပြုရလွယ်ကူသော ဒီဇိုင်းနှင့် အကန့်အသတ်မဲ့ အခမဲ့ဘောနပ်စ်များကို ခံစားလိုက်ပါ။
+    <section id="about" class="py-20 bg-gray-100 fade-in-section">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">About our Myanmar Casino & Game Group</h2>
+        <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold text-[#FB2056] mb-8">Myanmar Casino</h3>
+        <p class="text-gray-700 leading-relaxed">
+          မြန်မာ အွန်လိုင်းကာစီနို သည် မြန်မာနိုင်ငံ၏ အကြီးဆုံးနှင့် ယုံကြည်စိတ်ချရဆုံး အွန်လိုင်း ကာစီနို (Casino) နှင့် စလော့ဂိမ်း (Slot Game) အဖွဲအစည်းအဖြစ် ဦးဆောင်နေပါသည်။ နိုင်ငံတဝှမ်းရှိ အွန်လိုင်းဂိမ်းကစားသူ မီလီယံချီတို၏ ပထမဆုံးရွေးချယ်မှုဖြစ်လာခဲ့ပါသည်။ ကျွန်ုပ်တိုသည် ယုံကြည်စိတ်ချရမှု၊ တိကျမှန်ကန်သော သတင်းအချက်အလက်နှင့် ဘေးကင်းလုံခြုံသော ဂိမ်းကစားခြင်းအတွေ့အကြုံကို ပေးအပ်ရန် ကတိပြုပါသည်။
 
-နေ့စဉ်ဂိမ်းအပ်ဒိတ်များ၊ သီးသန့်ပရိုမိုးရှင်းများနှင့် လုံခြုံစိတ်ချရသော ပလက်ဖောင်းကြောင့် မြန်မာ အွန်လိုင်းဂိမ်း ဂရုပ်သည် နိုင်ငံအနှံဂိမ်းကစားသူများအတွက် ယုံကြည်စိတ်ချရမှု၏ အမှတ်အသားအဖြစ် ရပ်တည်နေပါသည်။
+    ဂိမ်းသတင်းများသာမက Myan99၊ Yoma77 နှင့် Bago888 ကဲ့သို နိုင်ငံတကာအဆင့်မီ ဂိမ်းပလက်ဖောင်းများနှင့် ပူးပေါင်း၍ အကောင်းဆုံး အွန်လိုင်းဂိမ်းအတွေ့အကြုံကို ပေးစွမ်းပါသည်။ စိတ်လှုပ်ရှားဖွယ်ရာ အင်္ဂါရပ်များ၊ အသုံးပြုရလွယ်ကူသော ဒီဇိုင်းနှင့် အကန့်အသတ်မဲ့ အခမဲ့ဘောနပ်စ်များကို ခံစားလိုက်ပါ။
 
-ဘေးကင်းလုံခြုံပြီး ခေတ်မီသော ဘောနပ်စ်များစွာပါဝင်သည့် ဂိမ်းအတွေ့အကြုံအတွက် ယနေ့ပင် မြန်မာ အွန်လိုင်းဂိမ်း ဂရုပ်နှင့် ချိတ်ဆက်ပြီး အနိုင်ယူလိုက်ပါ။
-      </p>
-    </div>
-  </section>
+    နေ့စဉ်ဂိမ်းအပ်ဒိတ်များ၊ သီးသန့်ပရိုမိုးရှင်းများနှင့် လုံခြုံစိတ်ချရသော ပလက်ဖောင်းကြောင့် မြန်မာ အွန်လိုင်းဂိမ်း ဂရုပ်သည် နိုင်ငံအနှံဂိမ်းကစားသူများအတွက် ယုံကြည်စိတ်ချရမှု၏ အမှတ်အသားအဖြစ် ရပ်တည်နေပါသည်။
 
+    ဘေးကင်းလုံခြုံပြီး ခေတ်မီသော ဘောနပ်စ်များစွာပါဝင်သည့် ဂိမ်းအတွေ့အကြုံအတွက် ယနေ့ပင် မြန်မာ အွန်လိုင်းဂိမ်း ဂရုပ်နှင့် ချိတ်ဆက်ပြီး အနိုင်ယူလိုက်ပါ။
+        </p>
+      </div>
+    </section>
+  </main>
+  
   <footer class="bg-black text-white fade-in-section">
     <div id="contact" class="bg-[#e76e01] py-6 text-center text-3xl font-bold">MYANMAR CASINO GROUP</div>
     <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-12">
@@ -414,6 +419,7 @@
   </a>
 
 <script>
+  // Script is unchanged from the original file
   const navbar = document.getElementById("navbar");
   const mobileMenuButton = document.getElementById("mobile-menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -421,11 +427,8 @@
   const backToTopButton = document.getElementById("back-to-top-button");
   let ticking = false;
 
-  // Function to handle navbar style on scroll
   const updateOnScroll = () => {
     const scrollY = window.scrollY;
-
-    // Navbar style update
     if (scrollY > 50) {
       navbar.classList.add("bg-black", "shadow");
       navbar.classList.remove("md:bg-transparent");
@@ -433,8 +436,6 @@
       navbar.classList.remove("bg-black", "shadow");
       navbar.classList.add("md:bg-transparent");
     }
-
-    // Back-to-top button visibility update
     if (scrollY > 300) {
       backToTopButton.classList.remove("opacity-0", "pointer-events-none");
       backToTopButton.classList.add("opacity-100", "pointer-events-auto");
@@ -445,7 +446,6 @@
     ticking = false;
   };
 
-  // Add event listener for scroll
   window.addEventListener("scroll", () => {
     if (!ticking) {
       window.requestAnimationFrame(updateOnScroll);
@@ -453,49 +453,33 @@
     }
   });
 
-  // Call the handler once on page load to set the initial state
   updateOnScroll();
 
-  // Mobile menu toggle
   mobileMenuButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
   });
 
-  // Close mobile menu when a link is clicked
   mobileMenuLinks.forEach(link => {
     link.addEventListener("click", () => {
       mobileMenu.classList.add("hidden");
     });
   });
 
-  // Game card overlay for mobile
   const gameCards = document.querySelectorAll('.game-card');
   const isMobile = window.innerWidth < 768;
   gameCards.forEach(card => {
     card.addEventListener('click', (e) => {
-      // Only run this logic on mobile screen sizes
       if (isMobile) {
         const overlay = card.querySelector('.button-overlay');
-
-        // If a link inside the overlay is clicked, do nothing and let the browser navigate.
         if (e.target.closest('.button-overlay a')) {
           return;
         }
-
-        // If we are here, the click was on the card itself, not a button.
-        // So we prevent any default behavior.
         e.preventDefault();
-
         const isClickedOverlayVisible = !overlay.classList.contains('opacity-0');
-
-        // Hide all overlays first to ensure only one is open at a time.
         gameCards.forEach(otherCard => {
           const otherOverlay = otherCard.querySelector('.button-overlay');
           otherOverlay.classList.add('opacity-0', 'pointer-events-none');
         });
-
-        // If the clicked overlay was originally hidden, show it.
-        // This acts as a toggle, as the loop above has already hidden it if it was visible.
         if (!isClickedOverlayVisible) {
           overlay.classList.remove('opacity-0', 'pointer-events-none');
         }
@@ -503,14 +487,7 @@
     });
   });
 
-  // Animate sections on scroll
   const sectionsToAnimate = document.querySelectorAll('.fade-in-section');
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-  };
-
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -518,13 +495,12 @@
         observer.unobserve(entry.target);
       }
     });
-  }, observerOptions);
+  }, { root: null, rootMargin: '0px', threshold: 0.1 });
 
   sectionsToAnimate.forEach(section => {
     observer.observe(section);
   });
 
-  // Gold coin click effect
   document.addEventListener('click', function(e) {
     for (let i = 0; i < 15; i++) {
       createCoin(e.clientX, e.clientY);
@@ -535,28 +511,19 @@
     const coin = document.createElement('div');
     coin.classList.add('coin');
     document.body.appendChild(coin);
-
-    // Start at the cursor position
     coin.style.left = `${x}px`;
     coin.style.top = `${y}px`;
-
-    // Randomize trajectory
     const destinationX = x + (Math.random() - 0.5) * 150;
     const destinationY = y + Math.random() * 150 + 50;
-
-    // Animate the coin after it has been added to the DOM
     setTimeout(() => {
       coin.style.transform = `translate(${destinationX - x}px, ${destinationY - y}px)`;
       coin.style.opacity = '0';
     }, 10);
-
-    // Remove the coin after the animation is complete
     setTimeout(() => {
       coin.remove();
-    }, 1010); // Slightly longer than the CSS transition
+    }, 1010);
   }
 
-  // Track affiliate link clicks for Google Analytics
   const affiliateLinksToTrack = document.querySelectorAll('a[href*="affiliateCode"]');
   affiliateLinksToTrack.forEach(link => {
     link.addEventListener('click', () => {
