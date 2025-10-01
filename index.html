@@ -22,6 +22,8 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
     <link rel="icon" sizes="16x16" href="./assets/logo/favicon-16x16.ico">
     <link rel="icon" sizes="32x32" href="./assets/logo/favicon-32x32.ico">
@@ -121,6 +123,9 @@
       pointer-events: none;
       transition: transform 1s ease-in, opacity 1s linear;
     }
+    .faq-answer {
+        transition: max-height 0.5s ease-in-out;
+    }
   </style>
 </head>
 
@@ -135,6 +140,7 @@
         <a href="#bonus" class="hover:text-[#CA0536] hover:underline">Free Bonus</a>
         <a href="#games" class="hover:text-[#CA0536] hover:underline">Games</a>
         <a href="#about" class="hover:text-[#CA0536] hover:underline">About Us</a>
+        <a href="#faq" class="hover:text-[#CA0536] hover:underline">FAQ</a>
         <a href="#contact" class="hover:text-[#CA0536] hover:underline">Contacts</a>
       </nav>
       <button id="mobile-menu-button" aria-label="Open menu" class="md:hidden text-white text-3xl focus:outline-none">☰</button>
@@ -145,6 +151,7 @@
         <a href="#bonus" class="text-white hover:text-[#CA0536] block px-3 py-2 rounded-md text-base font-medium hover:underline">Free Bonus</a>
         <a href="#games" class="text-white hover:text-[#CA0536] block px-3 py-2 rounded-md text-base font-medium hover:underline">Games</a>
         <a href="#about" class="text-white hover:text-[#CA0536] block px-3 py-2 rounded-md text-base font-medium hover:underline">About Us</a>
+        <a href="#faq" class="text-white hover:text-[#CA0536] block px-3 py-2 rounded-md text-base font-medium hover:underline">FAQ</a>
         <a href="#contact" class="text-white hover:text-[#CA0536] block px-3 py-2 rounded-md text-base font-medium hover:underline">Contacts</a>
       </nav>
     </div>
@@ -382,6 +389,87 @@
         </p>
       </div>
     </section>
+
+    <section id="faq" class="py-20 bg-gray-50 fade-in-section">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12">အမေးများသော မေးခွန်းများ (FAQ)</h2>
+        <div class="space-y-4">
+          
+          <div class="border border-gray-200 rounded-lg">
+            <button id="faq1-question" aria-expanded="false" aria-controls="faq1-answer" class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#e76e01]">
+              <span>အွန်လိုင်းကာစီနိုအကောင့်ကို ဘယ်လို ဖွင့်ရမလဲ?</span>
+              <svg class="w-6 h-6 transform transition-transform duration-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </button>
+            <div id="faq1-answer" role="region" aria-labelledby="faq1-question" class="faq-answer max-h-0 overflow-hidden">
+              <div class="p-5 border-t border-gray-200 text-gray-700">
+                <p>“Sign Up” ကို နှိပ်ပြီး ဖုန်းနံပါတ် နှင့် နာမည် အချက်အလက်များ ဖြည့်ပါ။ ဖုန်းနံပါတ် နဲ့ အကောင့်ဖွင့်ပါ — ဒါမှမဟုတ် Google / Telegram တို့ဖြင့်လဲ လျင်မြန်စွာ အကောင့်ဖွင့်နိုင်သည်။</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg">
+            <button id="faq2-question" aria-expanded="false" aria-controls="faq2-answer" class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#e76e01]">
+              <span>အကောင့်ထဲကို ငွေဘယ်လိုဖြည့်ရမလဲ ? / Deposit ဘယ်လိုလုပ်ရလဲ?</span>
+              <svg class="w-6 h-6 transform transition-transform duration-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </button>
+            <div id="faq2-answer" role="region" aria-labelledby="faq2-question" class="faq-answer max-h-0 overflow-hidden">
+              <div class="p-5 border-t border-gray-200 text-gray-700">
+                <p>“Wallet / Cashier” သို့ သွားပါ၊ ကြိုက်နှစ်သက်သော ငွေပေးချေမှု အမျိုးအစား ကိုရွေးပါ၊ ဖြည့်လိုသော ငွေပမာဏ ကို ထည့်သွင်းပြီး ငွေလွှဲပါ။ ငွေဖြည့်သွင်းခြင်းသည် အလွန်မြန်ဆန်ပြီး ချက်ချင်းရပါသည်။</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg">
+            <button id="faq3-question" aria-expanded="false" aria-controls="faq3-answer" class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#e76e01]">
+              <span>အခုမှစဆော့ မည့်သူများအတွက် ကာစီနို ဘောနက်စ် (Bonus) များ ရနိုင်သလား?</span>
+              <svg class="w-6 h-6 transform transition-transform duration-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </button>
+            <div id="faq3-answer" role="region" aria-labelledby="faq3-question" class="faq-answer max-h-0 overflow-hidden">
+              <div class="p-5 border-t border-gray-200 text-gray-700">
+                <p>အခုမှစဆော့မည့် သူများသည် ပထမဆုံး ငွေဖြည့်သွင်းခြင်း (Deposit) ပြုလုပ်ပြီးနောက် Welcome Bonus ကို ရယူနိုင်သည်။ ကာစီနို Promotion / Free Spins များအားလုံးကို <a href="#bonus" class="text-[#CA0536] underline">ဒီနေရာ</a> ကိုနိပ်ပြီး ကြည့်နိုင်သည်။</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg">
+            <button id="faq4-question" aria-expanded="false" aria-controls="faq4-answer" class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#e76e01]">
+              <span>မိုဘိုင်းဖုန်းပေါ်မှာ ကာစီနို ဂိမ်းများ ကစားနိုင်သလား?</span>
+              <svg class="w-6 h-6 transform transition-transform duration-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </button>
+            <div id="faq4-answer" role="region" aria-labelledby="faq4-question" class="faq-answer max-h-0 overflow-hidden">
+              <div class="p-5 border-t border-gray-200 text-gray-700">
+                <p>iOS / Android စမတ်ဖုန်းများတွင် Slots, Live Casino ဂိမ်းများကို မိုဘိုင်းဖုန်း မှ တိုက်ရိုက်ကစားနိုင်သည်၊ App သွင်းရန် မလိုပါ။</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg">
+            <button id="faq5-question" aria-expanded="false" aria-controls="faq5-answer" class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#e76e01]">
+              <span>ဘယ်လိုစလော့, ကာစီနို ဂိမ်းများကို ကစားနိုင်သလဲ?</span>
+              <svg class="w-6 h-6 transform transition-transform duration-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </button>
+            <div id="faq5-answer" role="region" aria-labelledby="faq5-question" class="faq-answer max-h-0 overflow-hidden">
+              <div class="p-5 border-t border-gray-200 text-gray-700">
+                <p>ရေပန်းစားသော စ‌လော့ ဂိမ်းများ, Roulette, Blackjack, Live Dealer ဂိမ်းများ ရရှိနိုင်သည်။ ရေပန်းစားသော ကာစီနိုနှင့် စလော့ ဂိမ်းများ ကြည့်လို့ပါက <a href="#games" class="text-[#CA0536] underline">ဒီနေရာ</a> ကိုနိပ်ပါ။</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg">
+            <button id="faq6-question" aria-expanded="false" aria-controls="faq6-answer" class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#e76e01]">
+              <span>ကာစီနို ကစာခြင်းမှ မှ အနိုင်ရရှိသော ‌ငွေများကို ဘယ်လို ထုတ်ယူမလဲ?</span>
+              <svg class="w-6 h-6 transform transition-transform duration-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
+            </button>
+            <div id="faq6-answer" role="region" aria-labelledby="faq6-question" class="faq-answer max-h-0 overflow-hidden">
+              <div class="p-5 border-t border-gray-200 text-gray-700">
+                <p>“Wallet / Cashier” ကိုဖွင့်ပြီး “Withdraw” ကိုရွေးပါ၊ ထုတ်ယူလိုသော ငွေပေးချေမှု ပလက်ဖောင်း ကို ရွေးပြီး ထုတ်ယူပါ။ ငွေထုတ်ယူမှုများ သည် ၁ ရက်မှ ၃ ရက်အထိ ကြာနိုင်သည်။</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
   
   <footer class="bg-black text-white fade-in-section">
@@ -533,6 +621,36 @@
           'event_label': link.href
         });
       }
+    });
+  });
+
+  // FAQ Accordion Script
+  const accordionButtons = document.querySelectorAll('.faq-question');
+  accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        const currentlyExpandedButton = document.querySelector('.faq-question[aria-expanded="true"]');
+        
+        // Close the currently open accordion item if it exists and is not the one being clicked
+        if (currentlyExpandedButton && currentlyExpandedButton !== button) {
+            currentlyExpandedButton.setAttribute('aria-expanded', 'false');
+            const currentlyExpandedAnswer = document.getElementById(currentlyExpandedButton.getAttribute('aria-controls'));
+            currentlyExpandedAnswer.style.maxHeight = null;
+            currentlyExpandedButton.querySelector('svg').classList.remove('rotate-45');
+        }
+
+        // Toggle the clicked accordion item
+        button.setAttribute('aria-expanded', !isExpanded);
+        const answer = document.getElementById(button.getAttribute('aria-controls'));
+        const icon = button.querySelector('svg');
+        
+        if (!isExpanded) {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            icon.classList.add('rotate-45');
+        } else {
+            answer.style.maxHeight = null;
+            icon.classList.remove('rotate-45');
+        }
     });
   });
 </script>
