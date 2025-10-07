@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="my">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2WVR5SZ2GC"></script>
+
+  <script id="gtag-script" data-src="https://www.googletagmanager.com/gtag/js?id=G-2WVR5SZ2GC"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-2WVR5SZ2GC');
+</script>
+
+<script>
+  function loadGtagOnInteraction() {
+    const gtagScript = document.getElementById('gtag-script');
+    if (gtagScript && !gtagScript.src) { // Check if not already loaded
+      gtagScript.src = gtagScript.dataset.src;
+    }
+    // Remove the event listeners so this only runs once
+    window.removeEventListener('scroll', loadGtagOnInteraction);
+    window.removeEventListener('mousemove', loadGtagOnInteraction);
+    window.removeEventListener('touchstart', loadGtagOnInteraction);
+  }
+
+  // Listen for the first user interaction
+  window.addEventListener('scroll', loadGtagOnInteraction, { once: true });
+  window.addEventListener('mousemove', loadGtagOnInteraction, { once: true });
+  window.addEventListener('touchstart', loadGtagOnInteraction, { once: true });
 </script>
 
   <meta charset="UTF-8">
@@ -670,18 +689,6 @@
       coin.remove();
     }, 1010);
   }
-
-  const affiliateLinksToTrack = document.querySelectorAll('a[href*="affiliateCode"]');
-  affiliateLinksToTrack.forEach(link => {
-    link.addEventListener('click', () => {
-      if (typeof gtag === 'function') {
-        gtag('event', 'click', {
-          'event_category': 'Affiliate Link',
-          'event_label': link.href
-        });
-      }
-    });
-  });
 
   // FAQ Accordion Script
   const accordionButtons = document.querySelectorAll('.faq-question');
