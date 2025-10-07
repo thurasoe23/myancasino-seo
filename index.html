@@ -2,7 +2,15 @@
 <html lang="my">
 <head>
 
-<script id="gtag-script" data-src="https://www.googletagmanager.com/gtag/js?id=G-2WVR5SZ2GC"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2WVR5SZ2GC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2WVR5SZ2GC');
+</script>
 
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -693,41 +701,6 @@
         }
     });
   });
-</script>
-<script>
-  // First, initialize the dataLayer and the gtag function so they are ready.
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-
-  // Use a flag to make sure the script is only loaded once.
-  let gtagLoaded = false;
-
-  function loadGtagAndTrack() {
-    // If the script has already been loaded, do nothing.
-    if (gtagLoaded) {
-      return;
-    }
-    gtagLoaded = true;
-
-    // 1. Find the placeholder script and set its 'src' to start the download.
-    const gtagScript = document.getElementById('gtag-script');
-    if (gtagScript) {
-      gtagScript.src = gtagScript.dataset.src;
-    }
-
-    // 2. NOW, send the pageview and config commands.
-    // By the time the script finishes loading, these commands will be waiting for it.
-    gtag('js', new Date());
-    gtag('config', 'G-2WVR5SZ2GC');
-
-    console.log('Google Analytics loaded and tracking started on user interaction.');
-  }
-
-  // Listen for the very first user interaction to trigger the loading.
-  // The { once: true } option automatically removes the listener after it runs.
-  window.addEventListener('scroll', loadGtagAndTrack, { once: true });
-  window.addEventListener('mousemove', loadGtagAndTrack, { once: true });
-  window.addEventListener('touchstart', loadGtagAndTrack, { once: true });
 </script>
 </body>
 </html>
