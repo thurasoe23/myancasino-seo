@@ -29,6 +29,13 @@
     <link rel="icon" sizes="192x192" href="./assets/logo/favicon-192x192.ico">
     <link rel="icon" sizes="256x256" href="./assets/logo/favicon-256x256.ico">
 
+    <link rel="alternate" hreflang="my-MM" href="https://myancasino.com/">
+    <link rel="alternate" hreflang="x-default" href="https://myancasino.com/">
+
+    <!-- Font for Burmese script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <meta property="og:title" content="MyanCasino 🎰 မြန်မာနိုင်ငံတွင် အကောင်းဆုံး အွန်လိုင်းကာစီနို ဘောနပ်စ်များနှင့် အခမဲ့ဂိမ်းများ">
     <meta property="og:description" content="ဘောနပ်စ်များ၊ ဖရီးစပင်များ၊ စလော့နှင့် ကာစီနိုဂိမ်းများ—Myanmar ကစားသူများအတွက် အစုံအလင်">
@@ -50,13 +57,15 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://myancasino.com/#organization",
     "name": "MyanCasino",
     "alternateName": "Myanmar Casino Online",
     "url": "https://myancasino.com/",
     "logo": "https://myancasino.com/assets/logo/logo.png",
     "sameAs": [
-      "https://www.facebook.com/myancasino/"
-   ]
+      "https://www.facebook.com/myancasino/",
+      "https://myanbets.com/"
+    ]
   }
   </script>
 
@@ -146,8 +155,8 @@
   <style>
     /* Critical CSS to prevent layout shifts and FOUC */
     body {
-      font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-      color: oklch(21% 0.034 264.665); /* gray-900 */
+      font-family: "Noto Sans Myanmar", ui-sans-serif, system-ui, sans-serif;
+      color: #333;
     }
     #home {
       min-height: 100vh;
@@ -202,14 +211,28 @@
     .faq-answer {
         transition: max-height 0.5s ease-in-out;
     }
+    .footer-link-disabled {
+      color: #bbb;
+      cursor: default;
+    }
+    .footer-links li a .arrow {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .footer-links li a .arrow {
+        display: inline;
+        margin-right: 6px;
+        color: #fbbf24; /* yellow-400 */
+      }
+    }
   </style>
 </head>
 
-<body class="font-sans text-gray-900">
+<body class="text-gray-900">
   <header id="navbar" class="fixed w-full z-50 transition-colors duration-300 bg-black/90 md:bg-transparent">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <img src="./assets/logo/Myanmar-Casino-logo-Horizontal.webp" alt="MyanCasino official logo horizontal design" class="h-12" width="169" height="48" fetchpriority="high"/>
+        <img src="./assets/logo/Myanmar-Casino-logo-Horizontal.webp" alt="MyanCasino official logo - မြန်မာအွန်လိုင်းကာစီနို" class="h-12" width="169" height="48" fetchpriority="high"/>
       </div>
       <nav class="hidden md:flex space-x-6 text-white">
         <a href="#home" class="hover:text-[#CA0536] hover:underline">Home</a>
@@ -220,7 +243,9 @@
         <a href="#faq" class="hover:text-[#CA0536] hover:underline">FAQ</a>
         <a href="#contact" class="hover:text-[#CA0536] hover:underline">Contacts</a>
       </nav>
-      <button id="mobile-menu-button" aria-label="Open menu" class="md:hidden text-white text-3xl focus:outline-none">☰</button>
+      <button id="mobile-menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white text-3xl focus:outline-none">
+  ☰
+</button>
     </div>
     <div id="mobile-menu" class="hidden md:hidden">
       <nav class="px-2 pt-2 pb-3 space-y-1 bg-black/90">
@@ -236,7 +261,7 @@
   </header>
 
   <main>
-    <div id="home" class="relative min-h-screen pt-24 flex flex-col items-center justify-center gap-y-12 md:gap-y-20 text-center">
+    <div id="home" tabindex="-1" class="relative min-h-screen pt-24 flex flex-col items-center justify-center gap-y-12 md:gap-y-20 text-center">
       <img src="./assets/image/myanmar-casino.webp" alt="Myanmar online casino slots and games background" class="absolute inset-0 w-full h-full object-cover -z-10" fetchpriority="high" width="1920" height="1080" />
       <div class="absolute inset-0 bg-black/60 -z-10"></div>
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white">မြန်မာ အွန်လိုင်း ကာစီနို</h1>
@@ -252,32 +277,32 @@
       <div class="flex w-full flex-col items-center gap-8 max-w-7xl px-4 md:flex-row md:justify-between md:gap-0 md:px-0 text-white">
         <div class="text-white text-center">
           <a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer">
-            <img src="./assets/logo/MYAN99.webp" alt="Myan99 casino logo Myanmar brand" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
+            <img src="./assets/logo/MYAN99.webp" alt="Myan99 casino logo for Myanmar players" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
           </a>
         </div>
         <div class="text-white text-center">
           <a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer">
-            <img src="./assets/logo/MYAN88.webp" alt="Myan88 casino gaming logo Myanmar" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
+            <img src="./assets/logo/MYAN88.webp" alt="Myan88 online casino logo for Myanmar" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
           </a>
         </div>
         <div class="text-white text-center">
           <a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer">
-            <img src="./assets/logo/B8MY.webp" alt="B8MY Myanmar online casino logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
+            <img src="./assets/logo/B8MY.webp" alt="B8MY casino logo for Myanmar online games" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
           </a>
         </div>
         <div class="text-white text-center">
           <a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer">
-            <img src="./assets/logo/YOMA77.webp" alt="Yoma77 Myanmar casino brand logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high"/>
+            <img src="./assets/logo/YOMA77.webp" alt="Yoma77 casino brand logo for Myanmar" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high"/>
           </a>
         </div>
         <div class="text-white text-center">
           <a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer">
-            <img src="./assets/logo/MYAN98.webp" alt="Myan98 casino logo Myanmar" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
+            <img src="./assets/logo/MYAN98.webp" alt="Myan98 casino logo for Myanmar players" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
           </a>
         </div>
         <div class="text-white text-center">
           <a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" fetchpriority="high">
-            <img src="./assets/logo/BAGO888.webp" alt="Bago888 Myanmar online casino logo" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
+            <img src="./assets/logo/BAGO888.webp" alt="Bago888 online casino logo for Myanmar" class="mx-auto animate-heartbeat h-16 md:h-auto" fetchpriority="high" />
           </a>
         </div>
       </div>
@@ -477,13 +502,13 @@
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">About our Myanmar Casino & Game Group</h2>
         <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold text-[#FB2056] mb-8">Myanmar Casino</h3>
         <p class="text-gray-700 leading-relaxed">
-          မြန်မာ အွန်လိုင်းကာစီနို သည် မြန်မာနိုင်ငံ၏ အကြီးဆုံးနှင့် ယုံကြည်စိတ်ချရဆုံး အွန်လိုင်း ကာစီနို (Casino) နှင့် စလော့ဂိမ်း (Slot Game) အဖွဲအစည်းအဖြစ် ဦးဆောင်နေပါသည်။ နိုင်ငံတဝှမ်းရှိ အွန်လိုင်းဂိမ်းကစားသူ မီလီယံချီတို၏ ပထမဆုံးရွေးချယ်မှုဖြစ်လာခဲ့ပါသည်။ ကျွန်ုပ်တိုသည် ယုံကြည်စိတ်ချရမှု၊ တိကျမှန်ကန်သော သတင်းအချက်အလက်နှင့် ဘေးကင်းလုံခြုံသော ဂိမ်းကစားခြင်းအတွေ့အကြုံကို ပေးအပ်ရန် ကတိပြုပါသည်။
+          မြန်မာ အွန်လိုင်းကာစီနို သည် မြန်မာနိုင်ငံ၏ အကြီးဆုံးနှင့် ယုံကြည်စိတ်ချရဆုံး အွန်လိုင်း ကာစီနို (Casino) နှင့် စလော့ဂိမ်း (Slot Game) အဖွဲ့အစည်းအဖြစ် ဦးဆောင်နေပါသည်။ နိုင်ငံတဝှမ်းရှိ အွန်လိုင်းဂိမ်းကစားသူ မီလီယံချီတို့၏ ပထမဆုံးရွေးချယ်မှုဖြစ်လာခဲ့ပါသည်။ ကျွန်ုပ်တို့သည် ယုံကြည်စိတ်ချရမှု၊ တိကျမှန်ကန်သော သတင်းအချက်အလက်နှင့် ဘေးကင်းလုံခြုံသော ဂိမ်းကစားခြင်းအတွေ့အကြုံကို ပေးအပ်ရန် ကတိပြုပါသည်။
 
     ဂိမ်းသတင်းများသာမက Myan99၊ Yoma77 နှင့် Bago888 ကဲ့သို နိုင်ငံတကာအဆင့်မီ ဂိမ်းပလက်ဖောင်းများနှင့် ပူးပေါင်း၍ အကောင်းဆုံး အွန်လိုင်းဂိမ်းအတွေ့အကြုံကို ပေးစွမ်းပါသည်။ စိတ်လှုပ်ရှားဖွယ်ရာ အင်္ဂါရပ်များ၊ အသုံးပြုရလွယ်ကူသော ဒီဇိုင်းနှင့် အကန့်အသတ်မဲ့ အခမဲ့ဘောနပ်စ်များကို ခံစားလိုက်ပါ။
 
-    နေ့စဉ်ဂိမ်းအပ်ဒိတ်များ၊ သီးသန့်ပရိုမိုးရှင်းများနှင့် လုံခြုံစိတ်ချရသော ပလက်ဖောင်းကြောင့် မြန်မာ အွန်လိုင်းဂိမ်း ဂရုပ်သည် နိုင်ငံအနှံဂိမ်းကစားသူများအတွက် ယုံကြည်စိတ်ချရမှု၏ အမှတ်အသားအဖြစ် ရပ်တည်နေပါသည်။
+    နေ့စဉ်ဂိမ်းအပ်ဒိတ်များ၊ သီးသန့်ပရိုမိုးရှင်းများနှင့် လုံခြုံစိတ်ချရသော ပလက်ဖောင်းကြောင့် မြန်မာ အွန်လိုင်းဂိမ်း ဂရုသည် နိုင်ငံအနှံဂိမ်းကစားသူများအတွက် ယုံကြည်စိတ်ချရမှု၏ အမှတ်အသားအဖြစ် ရပ်တည်နေပါသည်။
 
-    ဘေးကင်းလုံခြုံပြီး ခေတ်မီသော ဘောနပ်စ်များစွာပါဝင်သည့် ဂိမ်းအတွေ့အကြုံအတွက် ယနေ့ပင် မြန်မာ အွန်လိုင်းဂိမ်း ဂရုပ်နှင့် ချိတ်ဆက်ပြီး အနိုင်ယူလိုက်ပါ။
+    ဘေးကင်းလုံခြုံပြီး ခေတ်မီသော ဘောနပ်စ်များစွာပါဝင်သည့် ဂိမ်းအတွေ့အကြုံအတွက် ယနေ့ပင် မြန်မာ အွန်လိုင်းဂိမ်း ဂရုနှင့် ချိတ်ဆက်ပြီး အနိုင်ယူလိုက်ပါ။
         </p>
       </div>
     </section>
@@ -608,15 +633,15 @@
     <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-12">
       <div>
         <h3 class="font-bold text-yellow-500 mb-4">Our Links</h3>
-        <ul class="space-y-2">
-          <li><a href="/best-online-casino-sites-myanmar.html" class="hover:text-[#CA0536] hover:underline">Top 10 Myanmar Casinos</a></li>
-          <li><a href="https://myanbets.com" class="hover:text-[#CA0536] hover:underline">MyanBets – မြန်မာနိုင်ငံကာစီနိုဆုများနှိင်းယှဉ်ကြည့်ပါ</a></li>
-          <li><a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline">Myan99</a></li>
-          <li><a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline">Myan88</a></li>
-          <li><a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline">B8MY</a></li>
-          <li><a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline">Yoma77</a></li>
-          <li><a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline">Myan98</a></li>
-          <li><a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline">Bago888</a></li>
+        <ul class="space-y-2 footer-links">
+          <li><a href="/best-online-casino-sites-myanmar.html" class="hover:text-[#CA0536] hover:underline"><span class="arrow">›</span>Top 10 Myanmar Casinos</a></li>
+          <li><a href="https://myanbets.com" class="hover:text-[#CA0536] hover:underline"><span class="arrow">›</span>MyanBets – မြန်မာနိုင်ငံကာစီနိုဆုများနှိင်းယှဉ်ကြည့်ပါ</a></li>
+          <li><a href="https://www.myan99.me/m/home?affiliateCode=seom201" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline"><span class="arrow">›</span>Myan99</a></li>
+          <li><a href="https://www.myan88.me/m/home?affiliateCode=seom301" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline"><span class="arrow">›</span>Myan88</a></li>
+          <li><a href="https://www.b8my.net/m/home?affiliateCode=seom101" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline"><span class="arrow">›</span>B8MY</a></li>
+          <li><a href="https://www.yoma77.net/m/home?affiliateCode=seom401" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline"><span class="arrow">›</span>Yoma77</a></li>
+          <li><a href="https://www.myan98.co/m/home?affiliateCode=seom501" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline"><span class="arrow">›</span>Myan98</a></li>
+          <li><a href="https://www.bago888.net/m/home?affiliateCode=seom1701" target="_blank" rel="sponsored nofollow noopener noreferrer" class="hover:text-[#CA0536] hover:underline"><span class="arrow">›</span>Bago888</a></li>
         </ul>
       </div>
       <div>
@@ -629,7 +654,7 @@
       </div>
     </div>
     <div class="border-t border-gray-700 py-4 text-center text-sm space-x-4">
-      <span>Copyright © 2025</span> | <a href="#" class="hover:text-[#CA0536] hover:underline">Terms & Conditions</a> | <a href="#" class="hover:text-[#CA0536] hover:underline">Privacy Policy</a> | <a href="#" class="hover:text-[#CA0536] hover:underline">Feedback</a>
+      <span>Copyright © 2025</span> | <span class="footer-link-disabled">Terms & Conditions</span> | <span class="footer-link-disabled">Privacy Policy</span> | <span class="footer-link-disabled">Feedback</span>
     </div>
   </footer>
 
@@ -677,6 +702,8 @@
   updateOnScroll();
 
   mobileMenuButton.addEventListener("click", () => {
+    const expanded = mobileMenuButton.getAttribute("aria-expanded") === "true";
+    mobileMenuButton.setAttribute("aria-expanded", String(!expanded));
     mobileMenu.classList.toggle("hidden");
   });
 
