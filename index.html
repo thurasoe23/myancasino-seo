@@ -210,17 +210,7 @@
       opacity: 1;
       transform: translateY(0);
     }
-    .coin {
-      position: fixed;
-      z-index: 9999;
-      width: 12px;
-      height: 12px;
-      background: #ffd700;
-      border-radius: 50%;
-      border: 1px solid #daa520;
-      pointer-events: none;
-      transition: transform 1s ease-in, opacity 1s linear;
-    }
+    /* coin animation removed to improve interaction performance on mobile */
     .faq-answer {
         transition: max-height 0.5s ease-in-out;
     }
@@ -236,6 +226,11 @@
         display: inline;
         margin-right: 6px;
         color: #fbbf24; /* yellow-400 */
+      }
+      /* Disable continuous animations on small screens to reduce CPU work and improve responsiveness */
+      .animate-heartbeat,
+      .animate-gift-pulse {
+        animation: none !important;
       }
     }
   </style>
@@ -723,7 +718,7 @@
       window.requestAnimationFrame(updateOnScroll);
       ticking = true;
     }
-  });
+  }, { passive: true });
 
   updateOnScroll();
 
@@ -775,28 +770,7 @@
     observer.observe(section);
   });
 
-  document.addEventListener('click', function(e) {
-    for (let i = 0; i < 15; i++) {
-      createCoin(e.clientX, e.clientY);
-    }
-  });
-
-  function createCoin(x, y) {
-    const coin = document.createElement('div');
-    coin.classList.add('coin');
-    document.body.appendChild(coin);
-    coin.style.left = `${x}px`;
-    coin.style.top = `${y}px`;
-    const destinationX = x + (Math.random() - 0.5) * 150;
-    const destinationY = y + Math.random() * 150 + 50;
-    setTimeout(() => {
-      coin.style.transform = `translate(${destinationX - x}px, ${destinationY - y}px)`;
-      coin.style.opacity = '0';
-    }, 10);
-    setTimeout(() => {
-      coin.remove();
-    }, 1010);
-  }
+  /* Removed coin click animation and DOM-heavy click handler to improve INP on mobile */
 
   // FAQ Accordion Script
   const accordionButtons = document.querySelectorAll('.faq-question');
